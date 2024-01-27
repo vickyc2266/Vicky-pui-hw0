@@ -1,0 +1,316 @@
+/* Logo */
+img {
+    width: 400px;
+}
+
+/* Black Line at Heading */
+.custom-hr {
+    border: none; 
+    height: 3px; 
+    background-color: #000; 
+    margin: 10px;
+}
+
+/* All the links */
+a:link{
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Products for the Gallary and Detail page */
+#products{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+#products a{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    margin: 25px;
+}
+
+/* Product for Cart page */
+#productsSub{
+    text-align: center;
+    font-size: 30px;
+}
+#productsSub a{
+    text-decoration: none;
+    color: black;
+    margin: 25px;
+}
+
+/* Cart for Gallary and Detail Page */
+#cart{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
+#cart a{
+    text-decoration: none;
+}
+
+/* Cart for Cart page */
+#cartMain {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 30px;
+}
+#cartMain a{
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+/* White space for all the pages */
+#whiteSpace {
+    height: 30px;
+}
+
+/* for Gallary Page */
+#descrip {
+    text-align: center;
+    font-size: 30px;
+}
+
+#items {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#items img{
+    border: 3px solid #000;
+    width: 400px;
+    max-width: 100%;
+    height: 400px;
+
+}
+
+#OG{
+    border: 15px;
+    margin: 20px;
+    margin-top: 40px;
+}
+#OG:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Apple {
+    border : 15px;
+    margin: 20px;
+}
+#Apple:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Raisin {
+    border: 15px; 
+    margin: 20px;
+}
+#Raisin:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Walnut {
+    border: 15px;
+    margin: 20px;
+}
+#Walnut:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Double {
+    border: 15px;
+    margin: 20px;
+}
+#Double:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Straw {
+    border: 15px;
+    margin: 20px;
+} 
+#Straw:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* for Cart Page */
+#ShoppingCart {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* All the items on the menu and its images */
+#CartsItems {
+    text-align: center;
+}
+#CartsItems img{
+    border: 3px solid #000;
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+/* Item 1 */
+#item1 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+   
+}
+
+/* Item 2 */
+#item2 {
+    margin-top: 10px;
+ 
+}
+
+/* Both Remove Link */
+#Remove {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Both Prices */
+#Price {
+    font-size: 18px;
+}
+
+/* Bottom Line */
+#line {
+    margin-top: 30px;
+}
+#line hr{
+    width: 700px;
+    align-items: center;
+    height: 3px;
+    background-color: #000;
+}
+
+/* Total Price */
+#total {
+    text-align: center;
+}
+
+/* CheckOut Button */
+.style-button {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    border: solid black;
+}
+
+
+/* For Detail Page */
+
+
+#OGDetails {
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#OGDetails img {
+    border: 2px solid #000;
+    margin: 10px;
+    margin-top: 40px
+}
+
+#cap {
+    font-size: 18px;
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+/* Drop down code */
+.Drop {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-size : 22px;
+}
+.Drop select {
+    width: 200px;
+    height: 40px;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.Drop1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    font-size : 22px;
+    margin-bottom: 20px;
+
+}
+.Drop1 select {
+    width: 200px;
+    height: 40px;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.but1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+  
+span {
+    display: inline-block;
+    margin-right: 10px; /* Optional: Add margin between label and button */
+}
+  
+.but1 button {
+    background-color: yellow; /* Green */
+    border: solid black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body {
+    overflow-y: scroll;
+    font: Monospace;
+    align-items: center;
+    justify-content: center;   
+}
+
+
