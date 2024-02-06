@@ -1,0 +1,541 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+} */
+
+/* Styling for 2 links at the top of Products Page */
+.ProductLink{
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.CartLink1 {
+    /* size: 200px; */
+    position: relative;
+}
+
+nav {
+    color: #fff;
+    padding: 10px;
+    text-align: right; /* Align text to the right */
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none; /* Ensure no bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#links {
+    size: 40px;
+    margin: 20px;
+}
+
+
+  
+
+  .badge {
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 6px;
+    width: 10px;
+    height: 25px;
+    border-radius:50%;
+    
+    
+}
+
+/* Styling for 2 links at the top of Products Page END*/
+
+/* Styling for logo and line at the top of the Products Page */
+.Top {
+    display: flex;
+    align-items: center;
+    /* margin-top: 2px; */
+}
+
+.Part2 {
+    align-items: right;
+    width: 80%;
+}
+
+.Part2 h1 {
+    text-align: left;
+    margin-left: 50px;
+    margin-top:50px;
+    font-size: 30git apx;
+
+
+}
+
+
+
+
+
+.Line2 {
+    flex-grow: 1; /* Allow the line to grow and take up remaining space */
+    height: 5px; /* Set the height of the line */
+    background-color: #000; /* Set the color of the line */
+    margin-left: 10px; /* Adjust the margin between the logo and the line */
+}
+
+/* Logo */
+.Logo2 img{
+    width: 400px;
+}
+
+/* Styling for logo and line at the top of the Products Page END*/
+
+
+h1 {
+    text-align: center;
+    margin-top: 3px;
+    font-weight: normal;
+}
+
+
+/* All the links */
+a:link{
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+/* All the links END*/
+
+/* Stying for flex1 and flex2 items of Gallary Page */
+.flex2,
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex2 img,
+.flex1 img {
+    width: 285px;
+    border: 2px solid #000
+
+}
+
+#OG, 
+#Apple, 
+#Raisin, 
+#Walnut, 
+#Double, 
+#Straw{
+    margin: 25px;
+}
+
+#OG:hover, 
+#Apple:hover, 
+#Raisin:hover, 
+#Walnut:hover, 
+#Double:hover, 
+#Straw:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Stying for flex1 and flex2 items of Gallary Page END*/
+
+
+/* Styling for the Detail's Page Flex */
+
+#OGDetails {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#OGDetails > div {
+    margin: 10px; 
+}
+
+#flex3 p{
+    display: flex;
+    width: 300px;
+    text-align: left;
+    font-size: 23px;
+}
+
+#flex3 {
+    align-items: left;
+}
+
+#OGDetails img {
+    width: 600px;
+    border: 2px solid #000;
+    margin: 10px;
+    margin-top: 40px
+}
+
+#flex3 p {
+    margin-top: 60px;
+}
+
+/* Drop down code */
+.Drop {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size : 22px;
+}
+.Drop select {
+    width: 300px;
+    height: 40px;
+    margin-top: 15px;
+    /* margin: 15px; */
+    font-size: 18px;
+}
+
+.Drop1 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size : 22px;
+    margin-bottom: 20px;
+
+}
+.Drop1 select {
+    width: 300px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.but1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 160px;;
+}
+  
+span {
+    display: inline-block;
+    align-items: left;
+    text-align: left;
+    margin-right: 10px; 
+}
+  
+.but1 button {
+    background-color: yellow; 
+    border: solid black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: left;
+    width: 180px;
+}
+
+/* Styling for the Detail's Page Flex END*/
+
+/* Styling for the Cart's Page */
+.flexA {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: 70% */
+}
+
+
+#CartLink {
+    background-color: yellow;
+    font-weight: bold;
+
+}
+
+
+
+
+.flex5,
+.flex4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.flex5 img,
+.flex4 img {
+    width: 200px;
+    border: 2px solid #000
+}
+
+.flex5 > div,
+.flex4 > div {
+    margin: 20px;
+}
+
+#descrip1 p,
+#descrip p{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+#Price1 p,
+#Price p{
+    margin-left: 170px;
+    font-size: 20px;
+}
+
+#total{
+    display: flex;
+    text-align: right;
+    /* align-items: right; */
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Product for Cart page */
+#productsSub{
+    text-align: center;
+    font-size: 30px;
+}
+#productsSub a{
+    text-decoration: none;
+    color: black;
+    margin: 25px;
+}
+
+/* Cart for Gallary and Detail Page */
+#cart{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
+#cart a{
+    text-decoration: none;
+}
+
+/* Cart for Cart page */
+#cartMain {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 30px;
+}
+#cartMain a{
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+/* White space for all the pages */
+#whiteSpace {
+    height: 30px;
+}
+
+/* for Gallary Page */
+/* #descrip {
+    text-align: center;
+    font-size: 30px;
+} */
+
+.trial {
+    /* flex-flow: column wrap; */
+    display: flex;
+    /* background-color: dodgerblue; */
+}
+
+
+#items {
+    /* flex-flow: column wrap;
+    display: flex; */
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#items img{
+    /* flex-flow: column wrap;
+    display: flex; */
+    border: 3px solid #000;
+    width: 400px;
+    max-width: 100%;
+    height: 400px;
+
+}
+
+/* #OG{
+    border: 15px;
+    margin: 20px;
+    margin-top: 40px;
+}
+#OG:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Apple {
+    border : 15px;
+    margin: 20px;
+}
+#Apple:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Raisin {
+    border: 15px; 
+    margin: 20px;
+}
+#Raisin:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Walnut {
+    border: 15px;
+    margin: 20px;
+}
+#Walnut:hover{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Double {
+    border: 15px;
+    margin: 20px;
+}
+#Double:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#Straw {
+    border: 15px;
+    margin: 20px;
+} 
+#Straw:hover{
+    background-color: yellow;
+    font-weight: bold;
+} */
+
+/* for Cart Page */
+#ShoppingCart {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* All the items on the menu and its images */
+#CartsItems {
+    text-align: center;
+}
+#CartsItems img{
+    border: 3px solid #000;
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+/* Item 1 */
+/* #item1 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+   
+} */
+
+/* Item 2 */
+/* #item2 {
+    margin-top: 10px;
+ 
+} */
+
+/* Both Remove Link */
+#Remove {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Both Prices */
+/* #Price {
+    font-size: 18px;
+} */
+
+/* Bottom Line */
+#line {
+    margin-top: 30px;
+}
+#line hr{
+    width: 700px;
+    align-items: center;
+    height: 3px;
+    background-color: #000;
+}
+
+/* Total Price */
+/* #total {
+    text-align: center;
+} */
+
+/* CheckOut Button */
+.style-button {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    border: solid black;
+}
+
+
+/* For Detail Page */
+
+
+
+
+body {
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
