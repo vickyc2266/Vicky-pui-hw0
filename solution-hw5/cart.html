@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/cart.css" type="text/css" />
+	<script> src="rollsData.js" </script>
+	<script src="product.js" defer></script>
+</head>
+<body>
+	<div class="nav-wrapper">
+		<a href="index.html"><img alt="bun bun bake shop logo" src="images/logo/logo-01.svg"></a>
+		<div class="navbar">
+			<div class="nav-row">
+				<a href="index.html">Products</a>
+				<div class="nav-cart">
+					<a href="#">
+						<span class="highlight">Cart</span>
+						<span id="cart-badge">2</span>
+					</a>
+				</div>
+			</div>
+			<div id="banner">Shopping Cart</div>
+		</div>
+	</div>
+
+	<div class="container">
+        <div id="cartItemsContainer" class="cart-wrapper">
+        </div>
+        <div class="checkout-info">
+        </div>
+
+		<div id="totalPriceContainer"></div>
+
+		<div id="checkoutButtonContainer"></div>
+
+
+    </div>
+
+</body>
+</html>
