@@ -36,8 +36,6 @@ class Roll {
     }
 }
 
-
-
 function displayCartItem(roll, index) {
     // Create the container for the cart item
     const itemElement = document.createElement('div');
