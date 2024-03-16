@@ -4,23 +4,42 @@
 
 // import './cart.js';
 
-function retrieveLocalStorage(){
-    const CartString = localStorage.getItem('storedCart');
-    
-    const CartArray = JSON.parse(CartString);
-    console.log(CartArray);
-    cart = CartArray;
-    // for (const i of CartArray){
-    //     // const item = new Roll(i.rollType, i.rollGlazing, i.packSize, i.basePrice);
-    //     // displayCartItems()
-    //     // createElement(item);
-    //     console.log(i);
-    //     // cart.push(i);
+// function retrieveLocalStorage(){
+//     const CartString = localStorage.getItem('storedCart');
+//     const CartArray = JSON.parse(CartString);
+//     console.log(CartArray);
+//     // console.log(cartArr)
+//     cart = CartArray;
+//     console.log(cart);
+//     // for (const i of CartArray){
+//     //     // const item = new Roll(i.rollType, i.rollGlazing, i.packSize, i.basePrice);
+//     //     // displayCartItems()
+//     //     // createElement(item);
+//     //     console.log(i);
+//     //     // cart.push(i);
 
-    //     console.log(cart);
+//     //     console.log(cart);
         
-    // }
+//     // }
+// }
+
+let cart = []; 
+
+function retrieveLocalStorage() {
+    const cartString = localStorage.getItem('storedCart');
+    try {
+        const cartArray = JSON.parse(cartString);
+        console.log(cartArray);
+        // Ensure cart is an array even if cartArray is null
+        cart = Array.isArray(cartArray) ? cartArray : [];
+    } catch (error) {
+        console.error("Error parsing cart data from local storage:", error);
+        cart = []; // Reset cart to empty array in case of error
+    }
+    console.log(cart);
 }
+
+console.log(cart);
 
 let glazingOptions = [
     { option: "Keep Original", addOn: 0.00 },
@@ -51,7 +70,7 @@ const pack = {
 
 let basePrice = 2.49; 
 // let cart = []; 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+// let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 
 class Roll {
@@ -335,23 +354,27 @@ document.addEventListener('DOMContentLoaded', () => {
 // }
 
 
-let originalRoll = new Roll("Original", "Sugar Milk", 1, 2.49);
-let walnutRoll = new Roll("Walnut", "Vanilla Milk", 12, 3.49); 
-let raisinRoll = new Roll("Raisin", "Sugar Milk", 3, 2.99);
-let appleRoll = new Roll("Apple", "Keep Original", 3, 3.49);
+// let originalRoll = new Roll("Original", "Sugar Milk", 1, 2.49);
+// let walnutRoll = new Roll("Walnut", "Vanilla Milk", 12, 3.49); 
+// let raisinRoll = new Roll("Raisin", "Sugar Milk", 3, 2.99);
+// let appleRoll = new Roll("Apple", "Keep Original", 3, 3.49);
 
 //cart.push(originalRoll, walnutRoll, raisinRoll, appleRoll);
 
 // localStorage.setItem('cart', JSON.stringify(cart));
+console.log(cart);
 
 function updateCartBadge() {
     var count = 0;
-    // console.log(cart);
+    // cart = retrieveLocalStorage();
+    retrieveLocalStorage();
+    console.log(cart);
     for (var i = 0; i < cart.length; i++){
         count = count + 1;
     }
     document.querySelector("#cart-badge").innerText = count;
 }
+console.log(cart);
 
 
 // // Add event listener to the "Add to Cart" button

@@ -6,6 +6,15 @@ function saveToLocalStorage(){
     // const cartArray = Array.from(cart);
     const cartfile = JSON.stringify(cart);
     localStorage.setItem('storedCart', cartfile);
+    console.log(cartfile);
+}
+
+function retrieveLocalStorage(){
+    const CartString = localStorage.getItem('storedCart');
+    
+    const CartArray = JSON.parse(CartString);
+    console.log(CartArray);
+    cart = CartArray;
 }
 
 
@@ -66,6 +75,8 @@ function addtoCart(){
             const newRoll = new Roll(rollType, selectedGlazing, selectedPackSize, basePrice);
             
             // localStorage.setItem(newRoll)
+            cart = retrieveLocalStorage();
+            console.log(cart);
             cart.push(newRoll);
             updateCartBadge();
             saveToLocalStorage();
