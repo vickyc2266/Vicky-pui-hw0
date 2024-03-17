@@ -122,6 +122,7 @@ function displayCheckoutButton() {
 // Event listener for DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', () => {
     // saveToLocalStorage();
+    displayCheckoutButton();
 
     const storedCart = JSON.parse(localStorage.getItem('cart'));
     if (storedCart) {

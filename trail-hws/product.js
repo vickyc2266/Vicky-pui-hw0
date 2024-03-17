@@ -75,11 +75,13 @@ function addtoCart(){
             const newRoll = new Roll(rollType, selectedGlazing, selectedPackSize, basePrice);
             
             // localStorage.setItem(newRoll)
-            cart = retrieveLocalStorage();
+            // cart = retrieveLocalStorage();
+            // retrieveLocalStorage();
             console.log(cart);
             cart.push(newRoll);
-            updateCartBadge();
             saveToLocalStorage();
+            updateCartBadge();
+            // saveToLocalStorage();
         });
     }
 
